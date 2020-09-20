@@ -1,0 +1,1 @@
+int ISquare(int x);

@@ -1,0 +1,26 @@
+#01.
+    Constructor - "Data()" being called to create Data objects t1 and t2.
+#02.
+    Copy Assignment - "Data& operator = (const Data& d)" being called to copy contents of t1 into t2.
+#03.
+    Copy Constructor - "Data(const Data& d)" being called to copy contents of t1 into a new Data object t3.
+#04.
+    Move Constructor - "Data(Data&& d)" being called to move contents of t2 into a new Data object t4.
+#05.
+    Move Assignment - "Data& operator = (Data&& d)" being called to move contents of t3 into t4.
+#06.
+    Constructor - "Data()" being called to create new Data object d1 AND
+    Move Assignment - "Data& operator = (Data&& d)" being called to move contents of function1() (Data d1) into t4.
+    Destructor - "~Data()" being called to delete d1 from memory after function1() ends.
+#07.
+    Constructor - "Data()" being called to create new Data object d1 and make it equal to a new Data object t5.
+#08.
+    Copy Constructor - "Data(const Data& d)" being called to copy contents of t5 into a new Data object d in function2()
+    Destructor - "~Data()" being called to delete d from memory after function2() ends.
+#09a.
+    Constructor - "Data()" being called to create new Data object t6.
+#09b.
+    Copy Constructor - "Data(const Data& d)" being called to copy contents of t6 into a new Data object d in function2()
+    Destructor - "~Data()" being called to delete d from memory after function2() ends.
+#10.
+    Destructor - "~Data()" being called six times to delete ALL Data objects that were allocated (t1 - t6).

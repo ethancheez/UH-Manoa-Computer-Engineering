@@ -1,0 +1,10 @@
+My profession is: Teacher
+My age is: 23
+I can walk.
+I can talk.
+I can teach Maths.
+My profession is: Footballer
+My age is: 19
+I can walk.
+I can talk.
+I can play Football.
