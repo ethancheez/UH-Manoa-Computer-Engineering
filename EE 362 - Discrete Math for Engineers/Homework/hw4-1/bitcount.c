@@ -30,11 +30,12 @@ int bitcount3(unsigned int n) {
 
 int bitcount4(unsigned int n) {
     /* Change these masks */
-    unsigned int mask1 = 0x55555555;
-    unsigned int mask2 = 0x33333333;
-    unsigned int mask3 = 0x0f0f0f0f;
-    unsigned int mask4 = 0x000f000f;    //0x00ff00ff
-    unsigned int mask5 = 0xff;          //0x0000ffff
+    unsigned int mask1 = 0x55555555; // Every bit alternates between 0 and 1
+    unsigned int mask2 = 0x33333333; // Every 2-bits alternates between 00 and 11
+    unsigned int mask3 = 0x0f0f0f0f; // Every 4-bits alternates between 0000 and 1111
+    unsigned int mask4 = 0x00ff00ff; // Etc.
+    unsigned int mask5 = 0x0000ffff;
+
     unsigned int m = n;
 
     //printf("DEBUG 1: %x \t %d \n", m, m);
