@@ -1,0 +1,8 @@
+You would need to add an operator overload in each of the three inherited classes that can take in a vehicle of the same type. 
+
+Example for GroundV: GroundV operator+(const GroundV&);
+    where GroundV is the respective class.
+
+Having an operator overload in each inherited class is so that you are ONLY allowed to add two vehicles of the SAME type, rather than adding vehicles with the same parent class.
+
+This operator overload takes in another vehicle object of the same type, creates a new vehicle of that type, adds all of the respective protected variables together for the two vehicles (except maybe the odometer because the combined distance traveled as a group should be the same), and returns that new vehicle with the new variable values. 

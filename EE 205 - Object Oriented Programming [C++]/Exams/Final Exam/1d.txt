@@ -1,0 +1,56 @@
+class Vehicle {
+
+    protected:
+        float fuelUsage;
+        float load;
+        float fuelMeter;
+        float odoMeter;
+
+    public:
+        Vehicle(float usage);
+
+        float getLoad();
+        void setLoad(float l);
+        float getFuelMeter();
+        void setFuelMeter(float fm);
+        void setOdometer(float o);
+
+        void ShowUnitDetails();
+        virtual void ShowVehicleDetails();  //virtual function to allow ShowVehicleDetails to be unique to that specific class
+
+};
+
+class GroundV : public Vehicle {
+
+    public:
+        GroundV(float usage) : Vehicle(usage) {};
+
+        float Drive(float mi);
+
+        void ShowVehicleDetails() override; //override function to tell the program to run this function (if it's an object of this class) and not the other ShowVehicleDetails functions.
+
+};
+
+class AirV : public Vehicle {
+
+    public:
+        AirV(float usage) : Vehicle(usage) {};
+
+        float Fly(float mi);
+
+        void ShowVehicleDetails() override; //override function to tell the program to run this function (if it's an object of this class) and not the other ShowVehicleDetails functions.
+
+};
+
+class SeaV : public Vehicle {
+
+    public:
+        SeaV(float usage) : Vehicle(usage) {};
+
+        float Sail(float mi);
+
+        void ShowVehicleDetails() override; //override function to tell the program to run this function (if it's an object of this class) and not the other ShowVehicleDetails functions.
+
+};
+
+Additional "void ShowVehicleDetails() override;" functions will be added to other vehicle classes (i.e. space) 
