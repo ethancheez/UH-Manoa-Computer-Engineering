@@ -43,3 +43,4 @@ int main() {
     printf("Result of is %d a power 2: %d\n",POW2,isPowerTwo(POW2));
     printf("Result of is %d a power 2: %d\n",NOTPOW2,isPowerTwo(NOTPOW2));
 }
+
