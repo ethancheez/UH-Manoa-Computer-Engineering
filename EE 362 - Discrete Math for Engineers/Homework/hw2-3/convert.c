@@ -46,3 +46,4 @@ int main(void) {
     free(s);
     printf("Binary %s to decimal %d\n",a,bin2dec(a));
 }
+
