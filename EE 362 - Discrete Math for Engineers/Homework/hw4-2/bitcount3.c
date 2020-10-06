@@ -8,3 +8,5 @@ int main() {
     printf("Bits: %d\n", ((tmp + (tmp >> 4)) & 0x0f0f0f0f0f0f0f0f) % 255);
     
 }
+
+
