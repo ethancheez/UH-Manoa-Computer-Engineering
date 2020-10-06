@@ -59,3 +59,4 @@ int main() {
     printf("bitcount3(%x): %d\n",k,bitcount3(k));
     printf("bitcount4(%x): %d\n",k,bitcount4(k));
 }
+
