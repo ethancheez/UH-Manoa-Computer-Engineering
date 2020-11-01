@@ -1,0 +1,1 @@
+long double cosine(float x);
